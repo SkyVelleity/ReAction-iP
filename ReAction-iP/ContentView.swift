@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    var tapped = false
+    @State var currentErrorState = "nope"
+    @State var x = "No updates yet"
+    @State var y = "No updates yet"
+    @State var z = "No updates yet"
+
+    var customMotion = CustomMotionManager()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if tapped {
+            Text("TAPPED")
+                .foregroundColor(.green)
+        } else {
+        Text(currentErrorState)
+            .foregroundColor(.red)
+            .multilineTextAlignment(.center)
+            
+        }
+        
+        Text("Accel readings:")
+        Text("X: \(x)")
+        Text("Y: \(y)")
+        Text("Z: \(z)")
+        Button("FUCK") {customMotion.startDeviceMotion(&currentErrorState)}
     }
 }
 

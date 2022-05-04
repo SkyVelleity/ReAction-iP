@@ -15,3 +15,10 @@ struct ReAction_iPApp: App {
         }
     }
 }
+
+
+
+
+
+// Todo
+//Configure UIRequiredDeviceCapabilities key of its Info.plist file with the accelerometer value

@@ -14,6 +14,7 @@
 		33CC3BFB282239FB00A84E4E /* ReAction_iPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3BFA282239FB00A84E4E /* ReAction_iPTests.swift */; };
 		33CC3C05282239FB00A84E4E /* ReAction_iPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3C04282239FB00A84E4E /* ReAction_iPUITests.swift */; };
 		33CC3C07282239FB00A84E4E /* ReAction_iPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3C06282239FB00A84E4E /* ReAction_iPUITestsLaunchTests.swift */; };
+		33CC3C1428224BFC00A84E4E /* CustomMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3C1328224BFC00A84E4E /* CustomMotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		33CC3C00282239FB00A84E4E /* ReAction-iPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReAction-iPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CC3C04282239FB00A84E4E /* ReAction_iPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_iPUITests.swift; sourceTree = "<group>"; };
 		33CC3C06282239FB00A84E4E /* ReAction_iPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_iPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33CC3C1328224BFC00A84E4E /* CustomMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				33CC3BE9282239F900A84E4E /* ReAction_iPApp.swift */,
 				33CC3BEB282239F900A84E4E /* ContentView.swift */,
+				33CC3C1328224BFC00A84E4E /* CustomMotionManager.swift */,
 				33CC3BED282239FB00A84E4E /* Assets.xcassets */,
 				33CC3BEF282239FB00A84E4E /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				33CC3BEC282239F900A84E4E /* ContentView.swift in Sources */,
 				33CC3BEA282239F900A84E4E /* ReAction_iPApp.swift in Sources */,
+				33CC3C1428224BFC00A84E4E /* CustomMotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
