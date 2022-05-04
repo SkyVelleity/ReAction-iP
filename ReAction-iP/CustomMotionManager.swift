@@ -21,9 +21,9 @@ class CustomMotionManager {
             
             self.timer = Timer(fire: Date(), interval: (1.0 / 60.0), repeats: true, block: { (timer) in
                 if let data = self.motion.deviceMotion {
-                    let x = data.attitude.pitch
-                    let y = data.attitude.roll
-                    let z = data.attitude.yaw
+                    let x = data.userAcceleration.x
+                    let y = data.userAcceleration.y
+                    let z = data.userAcceleration.z
                     
                     print("\(x), \(y), \(z)")
                 }
