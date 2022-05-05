@@ -24,20 +24,30 @@ struct ContentView: View {
     
     var body: some View {
         if tapped {
-            Text("TAPPED")
-                .foregroundColor(.green)
-        } else {
-        Text(currentErrorState)
-            .foregroundColor(.red)
-            .multilineTextAlignment(.center)
+            VStack{
+                Text("TAPPED")
+                Text("Accel readings:")
+                Text("X: \(x)")
+                Text("Y: \(y)")
+                Text("Z: \(z)")
+                Divider()
+                Spacer()
+            }
+            .background(Color.green)
             
+        } else {
+            VStack{
+                Text(currentErrorState)
+                Button("FUCK") {startDeviceMotion()}  //Bundle closure that can update XY&Z as well as tapped
+                    .multilineTextAlignment(.center)
+                Divider()
+                Spacer()
+            }
+            .background(Color.red)
         }
         
-        Text("Accel readings:")
-        Text("X: \(x)")
-        Text("Y: \(y)")
-        Text("Z: \(z)")
-       Button("FUCK") {startDeviceMotion()}  //Bundle closure that can update XY&Z as well as tapped
+        
+      
     }
     
     func startDeviceMotion() {

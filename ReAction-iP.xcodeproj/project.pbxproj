@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33755A1228238C5900BF9ED2 /* ReAction-POC WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33755A1128238C5900BF9ED2 /* ReAction-POC WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33755A1728238C6000BF9ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33755A1628238C6000BF9ED2 /* Assets.xcassets */; };
+		33755A1D28238C6000BF9ED2 /* ReAction-POC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33755A1C28238C6000BF9ED2 /* ReAction-POC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33755A2428238C6000BF9ED2 /* ReAction_iPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33755A2328238C6000BF9ED2 /* ReAction_iPApp.swift */; };
+		33755A2628238C6000BF9ED2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33755A2528238C6000BF9ED2 /* ComplicationController.swift */; };
+		33755A2828238C6500BF9ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33755A2728238C6500BF9ED2 /* Assets.xcassets */; };
+		33755A2B28238C6500BF9ED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33755A2A28238C6500BF9ED2 /* Preview Assets.xcassets */; };
+		33755A3628238C6500BF9ED2 /* ReAction_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33755A3528238C6500BF9ED2 /* ReAction_POCTests.swift */; };
+		33755A4028238C6500BF9ED2 /* ReAction_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33755A3F28238C6500BF9ED2 /* ReAction_POCUITests.swift */; };
+		33755A4228238C6500BF9ED2 /* ReAction_POCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33755A4128238C6500BF9ED2 /* ReAction_POCUITestsLaunchTests.swift */; };
+		33755A5428238D2600BF9ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3BEB282239F900A84E4E /* ContentView.swift */; };
 		33CC3BEA282239F900A84E4E /* ReAction_iPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3BE9282239F900A84E4E /* ReAction_iPApp.swift */; };
 		33CC3BEC282239F900A84E4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC3BEB282239F900A84E4E /* ContentView.swift */; };
 		33CC3BEE282239FB00A84E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC3BED282239FB00A84E4E /* Assets.xcassets */; };
@@ -18,6 +29,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		33755A1328238C5900BF9ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CC3BDE282239F900A84E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33755A1028238C5900BF9ED2;
+			remoteInfo = "ReAction-POC WatchKit App";
+		};
+		33755A1E28238C6000BF9ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CC3BDE282239F900A84E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33755A1B28238C6000BF9ED2;
+			remoteInfo = "ReAction-POC WatchKit Extension";
+		};
+		33755A3228238C6500BF9ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CC3BDE282239F900A84E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33755A1B28238C6000BF9ED2;
+			remoteInfo = "ReAction-POC WatchKit Extension";
+		};
+		33755A3C28238C6500BF9ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CC3BDE282239F900A84E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33755A1028238C5900BF9ED2;
+			remoteInfo = "ReAction-POC WatchKit App";
+		};
 		33CC3BF7282239FB00A84E4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 33CC3BDE282239F900A84E4E /* Project object */;
@@ -34,7 +73,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		33755A4528238C6500BF9ED2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				33755A1228238C5900BF9ED2 /* ReAction-POC WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A4828238C6500BF9ED2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				33755A1D28238C6000BF9ED2 /* ReAction-POC WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		33755A0E28238C5900BF9ED2 /* ReAction-POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReAction-POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33755A1128238C5900BF9ED2 /* ReAction-POC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReAction-POC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33755A1628238C6000BF9ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33755A1C28238C6000BF9ED2 /* ReAction-POC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReAction-POC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33755A2328238C6000BF9ED2 /* ReAction_iPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_iPApp.swift; sourceTree = "<group>"; };
+		33755A2528238C6000BF9ED2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		33755A2728238C6500BF9ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33755A2A28238C6500BF9ED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33755A2C28238C6500BF9ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33755A3128238C6500BF9ED2 /* ReAction-POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReAction-POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33755A3528238C6500BF9ED2 /* ReAction_POCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_POCTests.swift; sourceTree = "<group>"; };
+		33755A3B28238C6500BF9ED2 /* ReAction-POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReAction-POCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33755A3F28238C6500BF9ED2 /* ReAction_POCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_POCUITests.swift; sourceTree = "<group>"; };
+		33755A4128238C6500BF9ED2 /* ReAction_POCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_POCUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33CC3BE6282239F900A84E4E /* ReAction-iP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReAction-iP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CC3BE9282239F900A84E4E /* ReAction_iPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAction_iPApp.swift; sourceTree = "<group>"; };
 		33CC3BEB282239F900A84E4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +127,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33755A1928238C6000BF9ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A2E28238C6500BF9ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A3828238C6500BF9ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33CC3BE3282239F900A84E4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,12 +172,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33755A1528238C5900BF9ED2 /* ReAction-POC WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				33755A1628238C6000BF9ED2 /* Assets.xcassets */,
+			);
+			path = "ReAction-POC WatchKit App";
+			sourceTree = "<group>";
+		};
+		33755A2028238C6000BF9ED2 /* ReAction-POC WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33755A2328238C6000BF9ED2 /* ReAction_iPApp.swift */,
+				33755A2528238C6000BF9ED2 /* ComplicationController.swift */,
+				33755A2728238C6500BF9ED2 /* Assets.xcassets */,
+				33755A2C28238C6500BF9ED2 /* Info.plist */,
+				33755A2928238C6500BF9ED2 /* Preview Content */,
+			);
+			path = "ReAction-POC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		33755A2928238C6500BF9ED2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				33755A2A28238C6500BF9ED2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		33755A3428238C6500BF9ED2 /* ReAction-POCTests */ = {
+			isa = PBXGroup;
+			children = (
+				33755A3528238C6500BF9ED2 /* ReAction_POCTests.swift */,
+			);
+			path = "ReAction-POCTests";
+			sourceTree = "<group>";
+		};
+		33755A3E28238C6500BF9ED2 /* ReAction-POCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33755A3F28238C6500BF9ED2 /* ReAction_POCUITests.swift */,
+				33755A4128238C6500BF9ED2 /* ReAction_POCUITestsLaunchTests.swift */,
+			);
+			path = "ReAction-POCUITests";
+			sourceTree = "<group>";
+		};
 		33CC3BDD282239F900A84E4E = {
 			isa = PBXGroup;
 			children = (
 				33CC3BE8282239F900A84E4E /* ReAction-iP */,
 				33CC3BF9282239FB00A84E4E /* ReAction-iPTests */,
 				33CC3C03282239FB00A84E4E /* ReAction-iPUITests */,
+				33755A1528238C5900BF9ED2 /* ReAction-POC WatchKit App */,
+				33755A2028238C6000BF9ED2 /* ReAction-POC WatchKit Extension */,
+				33755A3428238C6500BF9ED2 /* ReAction-POCTests */,
+				33755A3E28238C6500BF9ED2 /* ReAction-POCUITests */,
 				33CC3BE7282239F900A84E4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +237,11 @@
 				33CC3BE6282239F900A84E4E /* ReAction-iP.app */,
 				33CC3BF6282239FB00A84E4E /* ReAction-iPTests.xctest */,
 				33CC3C00282239FB00A84E4E /* ReAction-iPUITests.xctest */,
+				33755A0E28238C5900BF9ED2 /* ReAction-POC.app */,
+				33755A1128238C5900BF9ED2 /* ReAction-POC WatchKit App.app */,
+				33755A1C28238C6000BF9ED2 /* ReAction-POC WatchKit Extension.appex */,
+				33755A3128238C6500BF9ED2 /* ReAction-POCTests.xctest */,
+				33755A3B28238C6500BF9ED2 /* ReAction-POCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +286,93 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		33755A0D28238C5900BF9ED2 /* ReAction-POC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33755A5128238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POC" */;
+			buildPhases = (
+				33755A0C28238C5900BF9ED2 /* Resources */,
+				33755A4528238C6500BF9ED2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33755A1428238C5900BF9ED2 /* PBXTargetDependency */,
+			);
+			name = "ReAction-POC";
+			productName = "ReAction-POC";
+			productReference = 33755A0E28238C5900BF9ED2 /* ReAction-POC.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		33755A1028238C5900BF9ED2 /* ReAction-POC WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33755A5028238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POC WatchKit App" */;
+			buildPhases = (
+				33755A0F28238C5900BF9ED2 /* Resources */,
+				33755A4828238C6500BF9ED2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33755A1F28238C6000BF9ED2 /* PBXTargetDependency */,
+			);
+			name = "ReAction-POC WatchKit App";
+			productName = "ReAction-POC WatchKit App";
+			productReference = 33755A1128238C5900BF9ED2 /* ReAction-POC WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		33755A1B28238C6000BF9ED2 /* ReAction-POC WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33755A4F28238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POC WatchKit Extension" */;
+			buildPhases = (
+				33755A1828238C6000BF9ED2 /* Sources */,
+				33755A1928238C6000BF9ED2 /* Frameworks */,
+				33755A1A28238C6000BF9ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReAction-POC WatchKit Extension";
+			productName = "ReAction-POC WatchKit Extension";
+			productReference = 33755A1C28238C6000BF9ED2 /* ReAction-POC WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		33755A3028238C6500BF9ED2 /* ReAction-POCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33755A5228238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POCTests" */;
+			buildPhases = (
+				33755A2D28238C6500BF9ED2 /* Sources */,
+				33755A2E28238C6500BF9ED2 /* Frameworks */,
+				33755A2F28238C6500BF9ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33755A3328238C6500BF9ED2 /* PBXTargetDependency */,
+			);
+			name = "ReAction-POCTests";
+			productName = "ReAction-POCTests";
+			productReference = 33755A3128238C6500BF9ED2 /* ReAction-POCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33755A3A28238C6500BF9ED2 /* ReAction-POCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33755A5328238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POCUITests" */;
+			buildPhases = (
+				33755A3728238C6500BF9ED2 /* Sources */,
+				33755A3828238C6500BF9ED2 /* Frameworks */,
+				33755A3928238C6500BF9ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33755A3D28238C6500BF9ED2 /* PBXTargetDependency */,
+			);
+			name = "ReAction-POCUITests";
+			productName = "ReAction-POCUITests";
+			productReference = 33755A3B28238C6500BF9ED2 /* ReAction-POCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		33CC3BE5282239F900A84E4E /* ReAction-iP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33CC3C0A282239FB00A84E4E /* Build configuration list for PBXNativeTarget "ReAction-iP" */;
@@ -196,6 +436,23 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					33755A0D28238C5900BF9ED2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					33755A1028238C5900BF9ED2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					33755A1B28238C6000BF9ED2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					33755A3028238C6500BF9ED2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 33755A1B28238C6000BF9ED2;
+					};
+					33755A3A28238C6500BF9ED2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 33755A1028238C5900BF9ED2;
+					};
 					33CC3BE5282239F900A84E4E = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -225,11 +482,54 @@
 				33CC3BE5282239F900A84E4E /* ReAction-iP */,
 				33CC3BF5282239FB00A84E4E /* ReAction-iPTests */,
 				33CC3BFF282239FB00A84E4E /* ReAction-iPUITests */,
+				33755A0D28238C5900BF9ED2 /* ReAction-POC */,
+				33755A1028238C5900BF9ED2 /* ReAction-POC WatchKit App */,
+				33755A1B28238C6000BF9ED2 /* ReAction-POC WatchKit Extension */,
+				33755A3028238C6500BF9ED2 /* ReAction-POCTests */,
+				33755A3A28238C6500BF9ED2 /* ReAction-POCUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33755A0C28238C5900BF9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A0F28238C5900BF9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33755A1728238C6000BF9ED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A1A28238C6000BF9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33755A2B28238C6500BF9ED2 /* Preview Assets.xcassets in Resources */,
+				33755A2828238C6500BF9ED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A2F28238C6500BF9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A3928238C6500BF9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33CC3BE4282239F900A84E4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +556,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33755A1828238C6000BF9ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33755A2428238C6000BF9ED2 /* ReAction_iPApp.swift in Sources */,
+				33755A2628238C6000BF9ED2 /* ComplicationController.swift in Sources */,
+				33755A5428238D2600BF9ED2 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A2D28238C6500BF9ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33755A3628238C6500BF9ED2 /* ReAction_POCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33755A3728238C6500BF9ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33755A4228238C6500BF9ED2 /* ReAction_POCUITestsLaunchTests.swift in Sources */,
+				33755A4028238C6500BF9ED2 /* ReAction_POCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33CC3BE2282239F900A84E4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +613,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		33755A1428238C5900BF9ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33755A1028238C5900BF9ED2 /* ReAction-POC WatchKit App */;
+			targetProxy = 33755A1328238C5900BF9ED2 /* PBXContainerItemProxy */;
+		};
+		33755A1F28238C6000BF9ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33755A1B28238C6000BF9ED2 /* ReAction-POC WatchKit Extension */;
+			targetProxy = 33755A1E28238C6000BF9ED2 /* PBXContainerItemProxy */;
+		};
+		33755A3328238C6500BF9ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33755A1B28238C6000BF9ED2 /* ReAction-POC WatchKit Extension */;
+			targetProxy = 33755A3228238C6500BF9ED2 /* PBXContainerItemProxy */;
+		};
+		33755A3D28238C6500BF9ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33755A1028238C5900BF9ED2 /* ReAction-POC WatchKit App */;
+			targetProxy = 33755A3C28238C6500BF9ED2 /* PBXContainerItemProxy */;
+		};
 		33CC3BF8282239FB00A84E4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 33CC3BE5282239F900A84E4E /* ReAction-iP */;
@@ -299,6 +646,226 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		33755A4328238C6500BF9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33755A4428238C6500BF9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		33755A4628238C6500BF9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ReAction_POC_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "ReAction-POC WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POC.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		33755A4728238C6500BF9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ReAction_POC_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "ReAction-POC WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POC.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		33755A4928238C6500BF9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReAction-POC WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReAction-POC WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ReAction-POC WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POC.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		33755A4A28238C6500BF9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReAction-POC WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReAction-POC WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ReAction-POC WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POC.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		33755A4B28238C6500BF9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReAction-POC WatchKit Extension.appex/ReAction-POC WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		33755A4C28238C6500BF9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReAction-POC WatchKit Extension.appex/ReAction-POC WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		33755A4D28238C6500BF9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ReAction-POC WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		33755A4E28238C6500BF9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyvelleity.ReAction-POCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ReAction-POC WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
 		33CC3C08282239FB00A84E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -552,6 +1119,51 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33755A4F28238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POC WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33755A4928238C6500BF9ED2 /* Debug */,
+				33755A4A28238C6500BF9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33755A5028238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POC WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33755A4628238C6500BF9ED2 /* Debug */,
+				33755A4728238C6500BF9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33755A5128238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33755A4328238C6500BF9ED2 /* Debug */,
+				33755A4428238C6500BF9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33755A5228238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33755A4B28238C6500BF9ED2 /* Debug */,
+				33755A4C28238C6500BF9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33755A5328238C6500BF9ED2 /* Build configuration list for PBXNativeTarget "ReAction-POCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33755A4D28238C6500BF9ED2 /* Debug */,
+				33755A4E28238C6500BF9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33CC3BE1282239F900A84E4E /* Build configuration list for PBXProject "ReAction-iP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
