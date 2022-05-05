@@ -59,6 +59,7 @@ struct ContentView: View {
             })
             
             RunLoop.current.self.add(timer!, forMode: RunLoop.Mode.default)
+            //QuickTest
             
         } else {
             error = "Whoopsies!\nLooks like we did a fucko boingo!"
