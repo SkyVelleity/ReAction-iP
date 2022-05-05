@@ -10,7 +10,7 @@ import CoreMotion
 
 
 struct ContentView: View {
-    var tapped = false
+    @State var tapped = false
 
     @State var currentErrorState = "nope"
     @State var x = "No updates yet"
@@ -55,6 +55,12 @@ struct ContentView: View {
                     z = String(format: "%.2f", data.userAcceleration.z)
                     
                     print("\(x), \(y), \(z)")
+                    
+                    if (data.userAcceleration.x > 0.1 || data.userAcceleration.y > 0.1 || data.userAcceleration.z > 0.1){
+                        tapped = true
+                    } else {
+                        tapped = false
+                    }
                 }
                 
             })
