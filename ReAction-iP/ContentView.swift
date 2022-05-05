@@ -12,7 +12,7 @@ import CoreMotion
 struct ContentView: View {
     @State var tapped = false
 
-    @State var currentErrorState = "nope"
+    @State var onScreenMessage = "nope"
     @State var x = "No updates yet"
     @State var y = "No updates yet"
     @State var z = "No updates yet"
@@ -23,36 +23,27 @@ struct ContentView: View {
     
     
     var body: some View {
-        if tapped {
-            VStack{
-                Text("TAPPED")
-                Text("Accel readings:")
-                Text("X: \(x)")
-                Text("Y: \(y)")
-                Text("Z: \(z)")
-                Divider()
-                Spacer()
-            }
-            .background(Color.green)
-            
-        } else {
-            VStack{
-                Text(currentErrorState)
-                Button("FUCK") {startDeviceMotion()}  //Bundle closure that can update XY&Z as well as tapped
-                    .multilineTextAlignment(.center)
-                Divider()
-                Spacer()
-            }
-            .background(Color.red)
+        VStack{
+            Text(onScreenMessage)
+                .multilineTextAlignment(.center)
+            Text("Accel readings:")
+            Text("X: \(x)")
+            Text("Y: \(y)")
+            Text("Z: \(z)")
+                .multilineTextAlignment(.center)
+//            Divider()
+            Spacer()
+
+            Button("FUCK") {startDeviceMotion()}  //Bundle closure that can update XY&Z as well as tapped
+                
+
         }
-        
-        
-      
+        .background(tapped ? Color.green : Color.red)
     }
     
     func startDeviceMotion() {
         if motion.isDeviceMotionAvailable {
-            currentErrorState = "nope"
+            onScreenMessage = "nope"
             self.motion.deviceMotionUpdateInterval = 1.0 / 60.0
             self.motion.showsDeviceMovementDisplay = true
             self.motion.startDeviceMotionUpdates(using: .xMagneticNorthZVertical)
@@ -68,6 +59,7 @@ struct ContentView: View {
                     
                     if (data.userAcceleration.x > 0.1 || data.userAcceleration.y > 0.1 || data.userAcceleration.z > 0.1){
                         tapped = true
+                        onScreenMessage = "TAPPED"
                     } else {
                         tapped = false
                     }
@@ -79,7 +71,7 @@ struct ContentView: View {
             
             
         } else {
-            currentErrorState = "Whoopsies!\nLooks like we did a fucko boingo!"
+            onScreenMessage = "Whoopsies!\nLooks like we did\na fucko boingo!"
         }
     }
     
