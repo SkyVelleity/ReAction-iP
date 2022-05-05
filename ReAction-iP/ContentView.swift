@@ -37,11 +37,12 @@ struct ContentView: View {
         Text("X: \(x)")
         Text("Y: \(y)")
         Text("Z: \(z)")
-       // Button("FUCK") {customMotion.startDeviceMotion(&currentErrorState)}  //Bundle closure that can update XY&Z as well as tapped
+       Button("FUCK") {startDeviceMotion()}  //Bundle closure that can update XY&Z as well as tapped
     }
     
-    func startDeviceMotion(_ error: inout String) {
+    func startDeviceMotion() {
         if motion.isDeviceMotionAvailable {
+            currentErrorState = "nope"
             self.motion.deviceMotionUpdateInterval = 1.0 / 60.0
             self.motion.showsDeviceMovementDisplay = true
             self.motion.startDeviceMotionUpdates(using: .xMagneticNorthZVertical)
@@ -59,10 +60,10 @@ struct ContentView: View {
             })
             
             RunLoop.current.self.add(timer!, forMode: RunLoop.Mode.default)
-            //QuickTest
+            
             
         } else {
-            error = "Whoopsies!\nLooks like we did a fucko boingo!"
+            currentErrorState = "Whoopsies!\nLooks like we did a fucko boingo!"
         }
     }
     
