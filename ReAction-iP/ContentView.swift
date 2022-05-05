@@ -50,9 +50,9 @@ struct ContentView: View {
             var timer : Timer?
             timer = Timer(fire: Date(), interval: (1.0 / 60.0), repeats: true, block: { (timer) in
                 if let data = self.motion.deviceMotion {
-                    x = String(data.userAcceleration.x)
-                    y = String(data.userAcceleration.y)
-                    z = String(data.userAcceleration.z)
+                    x = String(format: "%.2f", data.userAcceleration.x)
+                    y = String(format: "%.2f", data.userAcceleration.y)
+                    z = String(format: "%.2f", data.userAcceleration.z)
                     
                     print("\(x), \(y), \(z)")
                 }
